@@ -268,3 +268,5 @@ baseline.json
 
 # pnpm store
 .pnpm-store
+
+wwwroot/
