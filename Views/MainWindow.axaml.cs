@@ -8,4 +8,11 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
+
+    private void TheWebView_EnvironmentRequested(object? sender, WebViewEnvironmentRequestedEventArgs e)
+    {
+#if DEBUG
+        e.EnableDevTools = true;
+#endif
+    }
 }

@@ -10,6 +10,8 @@
         Title="{Binding Title}">
 
     <NativeWebView
+        x:Name="TheWebView"
+        EnvironmentRequested="TheWebView_EnvironmentRequested"
         Source="{Binding BackendUri}"
         VerticalAlignment="Stretch"
         HorizontalAlignment="Stretch"
